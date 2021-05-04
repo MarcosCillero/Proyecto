@@ -10563,11 +10563,37 @@ fieldset:disabled .btn {
 
 /*# sourceMappingURL=bootstrap.min.css.map */
 
-.container {
-    border: 1px solid black;
+.navbar {
+    padding: 1%;
 }
 
-.form-login {
-    text-align: left;
-    padding: 2%;
+button {
+    margin-bottom: 10px;
+}
+
+.navbar-nav>a {
+    margin-left: 30px;
+}
+
+.navbar-custom {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+}
+
+.li-custom-header {
+    margin-left: 30px;
+}
+
+.navbar-a {
+    color: white;
+}
+
+.btn-custom {
+    width: 200px;
+}
+
+.btn-custom2 {
+    width: 300px;
 }
