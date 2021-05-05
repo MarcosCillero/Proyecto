@@ -10772,3 +10772,33 @@ form {
 /*.form-sing_in{
 border: none;
 }*/
+
+.btn-header-custom:hover,
+.btn-primary:hover {
+    background-color: #FA944B;
+    border-color: black;
+}
+
+.remember-field {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.remember-field-pass {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.remember-field-buttom {
+    padding-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: black;
+}
+
+button:focus,
+.btn-primary:focus {
+    background: #FA944B !important;
+    box-shadow: none !important;
+}
