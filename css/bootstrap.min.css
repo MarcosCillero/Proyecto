@@ -10762,3 +10762,8 @@ footer,
 .btn-header-custom {
     background-color: #323232;
 }
+
+form {
+    border: 1px solid black;
+    border-radius: 15px;
+}
