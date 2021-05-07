@@ -28,12 +28,12 @@
         <div class="container-fluid">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Idiomas
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Castellano</a></li>
-                        <li><a class="dropdown-item" href="#">Inglés</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Inglés</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="login.html">Accede a tu cuenta</a></li>
-                                <li><a class="dropdown-item" href="sign_in.html">¿Nuevo? Regístrate</a></li>
+                                <li><a class="dropdown-item second-menu-item" href="sign_in.html">¿Nuevo? Regístrate</a></li>
                             </ul>
                         </div>
                     </li>
@@ -57,178 +57,107 @@
     </nav>
 
     <!--Cuerpo de la página-->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <div class="container">
+    <div class="container px-5 py-6 mx-auto">
+        <div class="card card0">
+            <div class="row justify-content-center my-auto">
+                <div class="col-md-8 col-10 my-5">
+                    <div class="row justify-content-center px-3 mb-3">
+                        <!--<img id="logo" src="">-->
 
-                    <!--Fila del encabezado-->
-                    <div class="row">
+                    </div>
+
+                    <h3 class="mb-5 text-center heading">Somos la compañía X</h3>
+                    <h4 class="msg-info">Accede a tu cuenta:</h4>
+
+                    <!--Nombre-->
+                    <div class="form-group">
+                        <label class="form-control-label text-muted">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="" class="form-control"><br>
+                    </div>
+
+                    <!--Apellidos-->
+                    <div class="form-group">
+                        <label class="form-control-label text-muted">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="" class="form-control"><br>
+                    </div>
+
+                    <!--Email-->
+                    <div class="form-group">
+                        <label class="form-control-label text-muted">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="ejemplo@ex.com" class="form-control"><br>
+                    </div>
+
+                    <!--Pass-->
+                    <div class="form-group">
+                        <label class="form-control-label text-muted">Contraseña:</label>
+                        <input type="password" id="psw" name="psw" placeholder="*************" class="form-control"><br>
+                    </div>
+
+                    <!--PassR-->
+                    <div class="form-group">
+                        <label class="form-control-label text-muted">Repite la contraseña:</label>
+                        <input type="password" id="pswRepeat" name="pswRepeat" placeholder="*************" class="form-control"><br>
+                    </div>
+
+                    <!--Dirección-->
+                    <div class="form-group">
+                        <label class="form-control-label text-muted">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="" class="form-control"><br>
+                    </div>
+
+                    <!--Piso/CP-->
+
+                    <div class="form-group row">
                         <div class="col">
-                            <h2>Creación de cuenta:</h2>
+                            <label class="form-control-label text-muted">Piso/número:</label>
+                            <input type="text" id="pisoNumero" name="pisoNumero" placeholder="" class="form-control"><br>
+                        </div>
+
+                        <div class="col">
+                            <label class="form-control-label text-muted">CP:</label>
+                            <input type="text" id="cp" name="cp" placeholder="" class="form-control"><br>
                         </div>
                     </div>
 
-                    <!--Fila del formulario-->
+                    <!--Sexo-->
                     <div class="row">
-                        <form>
-                            <!--Usuario Nombre-->
-                            <div class="form-group row">
-                                <div class="col">
-                                    <label for="nombre_sign_in" class="col col-form-label">Nombre:</label>
-                                </div>
-                            </div>
+                        <div class="form-check sexo">
+                            <label for="sexo">Sexo:</label>
+                        </div>
 
-                            <div class="form-group row">
-                                <div class="col">
-                                    <input type="text" class="form-control" id="nombre_sign_in" placeholder=""><br>
-                                </div>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-radio-custom" type="radio" name="sexo" id="sexo1" value="option1" checked>
+                            <label class="form-check-label" for="sexo1">Mujer</label>
+                        </div>
 
-                            <!--Usuario Apellidos-->
-                            <div class="form-group row">
-                                <div class="col">
-                                    <label for="apellidos_sign_in" class="col col-form-label">Apellidos:</label>
-                                </div>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-radio-custom" type="radio" name="sexo" id="sexo2" value="option2">
+                            <label class="form-check-label" for="sexo2">Hombre</label>
+                        </div>
 
-                            <div class="form-group row">
-                                <div class="col">
-                                    <input type="text" class="form-control" id="apellidos_sign_in" placeholder=""><br>
-                                </div>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-radio-custom" type="radio" name="sexo" id="sexo3" value="option3">
+                            <label class="form-check-label" for="sexo3">Otro</label>
+                        </div>
 
-                            <!--Usuario Email-->
-                            <div class="form-group row">
-                                <div class="col">
-                                    <label for="email_sign_in" class="col col-form-label">Correo electrónico:</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col">
-                                    <input type="email" class="form-control" id="email_sign_in" placeholder="ejemplo@email.com"><br>
-                                </div>
-                            </div>
-
-                            <!--Contraseña-->
-                            <div class="form-group row">
-                                <div class="col-5">
-                                    <label for="pass_sign_in" class="col-form-label">Contraseña:</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col">
-                                    <input type="password" class="form-control" id="pass_sign_in" placeholder="*************"><br>
-                                </div>
-                            </div>
-
-                            <!--Repetir contraseña-->
-                            <div class="form-group row">
-                                <div class="col-5">
-                                    <label for="remember_pass_sign_in" class="col-form-label">Repite la contraseña:</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col">
-                                    <input type="password" class="form-control" id="remember_pass_sign_in" placeholder="*************"><br>
-                                </div>
-                            </div>
-
-                            <!--Dirección-->
-                            <div class="form-group row">
-                                <div class="col-5">
-                                    <label for="direction_sign_in" class="col-form-label">Dirección:</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col">
-                                    <input type="text" class="form-control" id="direction_sign_in" placeholder=""><br>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="col-6">
-                                    <div class="form-group row">
-                                        <div class="col-5">
-                                            <label for="pisoNumero_sign_in" class="col-form-label">Piso/Número:</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="pisoNumero_sign_in" placeholder=""><br>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="form-group row">
-                                        <div class="col-5">
-                                            <label for="cp_sign_in" class="col-form-label">CP:</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="cp_sign_in" placeholder=""><br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Sexo-->
-                            <div class="form-group row">
-                                <div class="col-5">
-                                    <label for="sexo_sign_in" class="col-form-label">Sexo:</label>
-                                </div>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="option1" checked>
-                                <label class="form-check-label" for="sexo1">
-                                  Mujer
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="option2">
-                                <label class="form-check-label" for="sexo2">
-                                  Hombre
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="sexo3" value="option3">
-                                <label class="form-check-label" for="sexo3">
-                                  Otro
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sexo" id="sexo4" value="option4">
-                                <label class="form-check-label" for="sexo4">
-                                  Prefiero no decirlo
-                                </label>
-                            </div><br>
-
-                            <!--Botones-->
-                            <div class="form-group row">
-                                <div class="form-group row">
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-primary">Crear usuario</button><br><br>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Link-->
-                            <div class="form-group row">
-
-                            </div>
-                        </form>
+                        <div class="form-check">
+                            <input class="form-check-input form-check-radio-custom" type="radio" name="sexo" id="sexo4" value="option4">
+                            <label class="form-check-label" for="sexo4">Prefiero no decirlo</label>
+                        </div><br>
                     </div>
+
+
+
+                    <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Entrar</button> </div>
+                    <div class="row justify-content-center my-2"> <a href="#"><small class="text-muted">¿Has olvidado tu contraseña?</small></a> </div>
                 </div>
+            </div>
+            <div class="bottom text-center mb-5">
+                <p href="#" class="sm-text mx-auto mb-3">¿Nuevo? Crea una cuenta gratis</p><button class="btn btn-white ml-2">Crear</button>
             </div>
         </div>
     </div>
+    <!-- /container -->
 
     <footer class="">
         <div class="footer-middle">
