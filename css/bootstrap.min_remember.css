@@ -10768,11 +10768,6 @@ footer,
     background-color: #323232;
 }
 
-form {
-    border: 1px solid black;
-    border-radius: 15px;
-}
-
 
 /*.form-sing_in{
 border: none;
@@ -10786,12 +10781,10 @@ border: none;
 
 .remember-field {
     padding-top: 30px;
-    padding-left: 30px;
 }
 
 .remember-field-pass {
     padding-top: 20px;
-    padding-right: 30px;
 }
 
 .remember-field-buttom {
@@ -10825,7 +10818,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     background: rgb(28, 28, 28);
-    background: linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(55, 55, 55, 1) 35%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient( rgba(28, 28, 28, 1) 0%, rgba(55, 55, 55, 1) 35%, rgba(227, 227, 227, 1) 100%);
     /*background-image: linear-gradient(to right, #D500F9, #FFD54F);
     background-repeat: no-repeat*/
 }
@@ -10914,10 +10907,9 @@ button:focus {
     border-radius: 50px;
     color: black;
     background: #ff6e70;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     border: none !important;
-    margin-top: 40px
 }
 
 .btn-color:hover {
@@ -10981,4 +10973,38 @@ a:hover {
         margin-top: 50px !important;
         margin-bottom: 50px !important
     }
+}
+
+body a {
+    text-decoration: none;
+}
+
+main {
+    min-height: calc(63vh - 223px);
+    display: inline-block;
+    width: 100%;
+}
+
+@media screen and (min-height: 1170px) {
+    main {
+        min-height: calc(90vh - 223px);
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.dropdown-menu {
+    padding: 20px;
+}
+
+.second-menu-item {
+    margin-top: 10px;
+}
+
+body {
+    font-family: Georgia, serif;
+}
+
+body.fonts-loaded {
+    font-family: “Merriweather”, Georgia, serif;
 }
