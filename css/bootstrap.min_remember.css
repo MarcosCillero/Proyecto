@@ -11002,11 +11002,3 @@ main {
 .second-menu-item {
     margin-top: 10px;
 }
-
-body {
-    font-family: Georgia, serif;
-}
-
-body.fonts-loaded {
-    font-family: “Merriweather”, Georgia, serif;
-}
