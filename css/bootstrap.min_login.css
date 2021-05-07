@@ -3662,6 +3662,7 @@ fieldset:disabled .btn {
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 20px;
+    padding: 20px;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -10864,6 +10865,8 @@ button:focus {
 .card {
     border-radius: 20px;
     border: none;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .card1 {
@@ -10981,4 +10984,12 @@ a:hover {
         margin-top: 50px !important;
         margin-bottom: 50px !important
     }
+}
+
+a {
+    text-decoration: none;
+}
+
+.second-menu-item {
+    margin-top: 10px;
 }
