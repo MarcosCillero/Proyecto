@@ -10857,6 +10857,8 @@ button:focus {
 .card {
     border-radius: 20px;
     border: none;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .card1 {
