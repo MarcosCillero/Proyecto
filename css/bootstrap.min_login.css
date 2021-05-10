@@ -10826,7 +10826,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     background: rgb(28, 28, 28);
-    background: linear-gradient(90deg, rgba(28, 28, 28, 1) 0%, rgba(55, 55, 55, 1) 35%, rgba(227, 227, 227, 1) 100%);
+    background: linear-gradient(rgba(28, 28, 28, 1) 0%, rgba(55, 55, 55, 1) 35%, rgba(227, 227, 227, 1) 100%);
     /*background-image: linear-gradient(to right, #D500F9, #FFD54F);
     background-repeat: no-repeat*/
 }
