@@ -20,74 +20,86 @@
 
 <body>
 
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-arrow-circle-down icon-menu" aria-hidden="true"></i>Bajada</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-tag icon-menu"></i>Chollos</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-commenting-o icon-menu"></i>Comentarios</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bookmark icon-menu"></i>Tags</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-server icon-menu"></i>Bots</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-ban icon-menu"></i>Palabras Prohibidas</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa fa-key icon-menu"></i>Keywords</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bullhorn icon-menu"></i>Banners</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bar-chart icon-menu"></i>Estadísticas</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-star icon-menu"></i>Top</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cart-arrow-down icon-menu"></i>Reporte Ventas</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-eye icon-menu"></i>Tracks</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user icon-menu"></i>Usuarios</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search icon-menu"></i>SEO</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trophy icon-menu"></i>Gamification</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-comments icon-menu"></i>Chats</a>
-        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-table icon-menu"></i>AliExpress</a>
-        <a href="#" class="w3-bar-item w3-button">Dirección</a>
-    </div>
 
-    <div class="w3-main" style="margin-left:200px">
+    <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+        <div class="mx-auto order-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="w3_open()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <a class="navbar-brand mx-auto navbar-a" href="#">Nombre web</a>
 
-        <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
-            <div class="mx-auto order-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="w3_open()">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-                <a class="navbar-brand mx-auto navbar-a" href="#">Nombre web</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <div class="container-fluid">
-                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <div class="dropdown">
-                        <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Idiomas
-                            </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Castellano</a></li>
-                            <li><a class="dropdown-item second-menu-item" href="#">Inglés</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Acceso usuario
-                                    </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="login.html">Accede a tu cuenta</a></li>
-                                    <li><a class="dropdown-item second-menu-item" href="sign_in.html">¿Nuevo? Regístrate</a></li>
-                                </ul>
-                            </div>
-                        </li>
+        <div class="container-fluid">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <div class="dropdown">
+                    <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Idiomas
+                        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Castellano</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Inglés</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Acceso usuario
+                                </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="login.html">Accede a tu cuenta</a></li>
+                                <li><a class="dropdown-item second-menu-item" href="sign_in.html">¿Nuevo? Regístrate</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <div class="w3-main" style="margin-left:200px">
+
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left sidenav" style="width:200px;" id="mySidebar">
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-arrow-circle-down icon-menu" aria-hidden="true"></i>Bajada</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-tag icon-menu"></i>Chollos</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-commenting-o icon-menu"></i>Comentarios</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bookmark icon-menu"></i>Tags</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-server icon-menu"></i>Bots</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-ban icon-menu"></i>Palabras Prohibidas</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa fa-key icon-menu"></i>Keywords</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bullhorn icon-menu"></i>Banners</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bar-chart icon-menu"></i>Estadísticas</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-star icon-menu"></i>Top</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cart-arrow-down icon-menu"></i>Reporte Ventas</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-eye icon-menu"></i>Tracks</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user icon-menu"></i>Usuarios</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search icon-menu"></i>SEO</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trophy icon-menu"></i>Gamification</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-comments icon-menu"></i>Chats</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-table icon-menu"></i>AliExpress</a>
+            <a href="#" class="w3-bar-item w3-button">Dirección</a>
+        </div>
+
 
 
         <div class="w3-container">
