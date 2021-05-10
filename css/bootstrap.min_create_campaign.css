@@ -11000,5 +11000,17 @@ a {
 
 #mySidebar {
     background-color: #1c1c1c;
-    color: white;
+    color: #9C9C9C;
+}
+
+.w3-bar-item {
+    margin-top: 15px;
+}
+
+.icon-menu {
+    margin-right: 10px;
+}
+
+.w3-bar-item:hover {
+    background: #ff6e70 !important;
 }
