@@ -10993,3 +10993,12 @@ a {
 .second-menu-item {
     margin-top: 10px;
 }
+
+.w3-container {
+    padding: 0;
+}
+
+#mySidebar {
+    background-color: #1c1c1c;
+    color: white;
+}

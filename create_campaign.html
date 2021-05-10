@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>Crear Campaña</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min_create_campaign.css" />
+    <title>Login</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Bajada</a>
+        <a href="#" class="w3-bar-item w3-button">Chollos</a>
+        <a href="#" class="w3-bar-item w3-button">Comentarios</a>
+        <a href="#" class="w3-bar-item w3-button">Tags</a>
+        <a href="#" class="w3-bar-item w3-button">Bots</a>
+        <a href="#" class="w3-bar-item w3-button">Palabras Prohibidas</a>
+        <a href="#" class="w3-bar-item w3-button">Keywords</a>
+        <a href="#" class="w3-bar-item w3-button">Banners</a>
+        <a href="#" class="w3-bar-item w3-button">Estadísticas</a>
+        <a href="#" class="w3-bar-item w3-button">Top</a>
+        <a href="#" class="w3-bar-item w3-button">Reporte Ventas</a>
+        <a href="#" class="w3-bar-item w3-button">Tracks</a>
+        <a href="#" class="w3-bar-item w3-button">Usuarios</a>
+        <a href="#" class="w3-bar-item w3-button">SEO</a>
+        <a href="#" class="w3-bar-item w3-button">Gamification</a>
+        <a href="#" class="w3-bar-item w3-button">Chats</a>
+        <a href="#" class="w3-bar-item w3-button">AliExpress</a>
+    </div>
+
+    <div class="w3-main" style="margin-left:200px">
+
+
+        <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+            <div class="mx-auto order-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="w3_open()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand mx-auto navbar-a" href="#">Nombre web</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <div class="dropdown">
+                        <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Idiomas
+                            </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Castellano</a></li>
+                            <li><a class="dropdown-item second-menu-item" href="#">Inglés</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Acceso usuario
+                                    </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="login.html">Accede a tu cuenta</a></li>
+                                    <li><a class="dropdown-item second-menu-item" href="sign_in.html">¿Nuevo? Regístrate</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="w3-container">
+            <div class="container px-5 py-6 mx-auto">
+                <div class="card">
+                    <div class="row justify-content-center my-auto">
+                        <div class="col-md-8 col-10 my-5">
+                            <div class="row justify-content-center px-3 mb-3">
+                                <!--<img id="logo" src="">-->
+
+                            </div>
+
+                            <h3 class="mb-5 text-center heading">Somos la compañía X</h3>
+                            <h4 class="msg-info">Accede a tu cuenta:</h4>
+                            <div class="form-group">
+                                <label class="form-control-label text-muted">Email:</label>
+                                <input type="text" id="email" name="email" placeholder="ejemplo@ex.com" class="form-control"><br>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-control-label text-muted">Contraseña</label>
+                                <input type="password" id="psw" name="psw" placeholder="*************" class="form-control">
+                            </div>
+
+                            <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Entrar</button> </div>
+                            <div class="row justify-content-center float-end my-2"> <a href="remember_password.html" class="float-right"><small class="text-muted">¿Has olvidado tu contraseña?</small></a> </div>
+                        </div>
+                    </div>
+                    <div class="bottom text-center mb-5">
+                        <p href="#" class="sm-text mx-auto mb-3">¿Nuevo? Crea una cuenta gratis</p>
+                        <a class="btn btn-white ml-2" href="sign_in.html" role="button">Crear</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+
+            <footer class="">
+                <div class="footer-middle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <!--Column1-->
+                                <div class="footer-pad">
+                                    <h4>Empresa</h4>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                        <li><a href="#">Nosotros</a></li>
+                                        <li><a href="#">Conoce al equipo</a></li>
+                                        <li><a href="#">Empleos</a></li>
+                                        <li><a href="#">Contacto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <!--Column1-->
+                                <div class="footer-pad">
+                                    <h4>Comunidad</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Como funciona Michollo</a></li>
+                                        <li><a href="#">Normas comunitarias</a></li>
+                                        <li><a href="#">Sugerencias</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <!--Column1-->
+                                <div class="footer-pad">
+                                    <h4>Legal</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Política de privacidad</a></li>
+                                        <li><a href="#">Política sobre Cookies</a></li>
+                                        <li><a href="#">Reglas de Publicación</a></li>
+                                        <li><a href="#">Aviso Legal y Condiciones</a></li>
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Síguenos</h4>
+                                <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+                                </ul>
+                                <h4 style="padding-top: 20px;">Descarga nuestra app</h4>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-custom-footer"><i class="fa fa-apple" aria-hidden="true"></i>Apple Store</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-custom-footer"><i class="fa fa-play" aria-hidden="true"></i>Google Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 copy">
+                                <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+    <script src="js/jquery-3.5.1.slim.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
