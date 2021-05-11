@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<title>Crear Campaña</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min_show_campaign.css" />
+    <title>Login</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+        <div class="mx-auto order-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="w3_open()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand mx-auto navbar-a" href="#">Nombre web</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="container-fluid">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <div class="dropdown">
+                    <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Idiomas
+                        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Castellano</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Inglés</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Acceso usuario
+                                </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="login.html">Accede a tu cuenta</a></li>
+                                <li><a class="dropdown-item second-menu-item" href="sign_in.html">¿Nuevo? Regístrate</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="w3-main" style="margin-left:200px">
+
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card sidenav" style="width:200px;" id="mySidebar">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-arrow-circle-down icon-menu" aria-hidden="true"></i>Bajada</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-tag icon-menu"></i>Chollos</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-commenting-o icon-menu"></i>Comentarios</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bookmark icon-menu"></i>Tags</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-server icon-menu"></i>Bots</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-ban icon-menu"></i>Palabras Prohibidas</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa fa-key icon-menu"></i>Keywords</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bullhorn icon-menu"></i>Banners</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bar-chart icon-menu"></i>Estadísticas</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-star icon-menu"></i>Top</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cart-arrow-down icon-menu"></i>Reporte Ventas</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-eye icon-menu"></i>Tracks</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user icon-menu"></i>Usuarios</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search icon-menu"></i>SEO</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trophy icon-menu"></i>Gamification</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-comments icon-menu"></i>Chats</a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-table icon-menu"></i>AliExpress</a>
+            <a href="#" class="w3-bar-item w3-button">Dirección</a>
+        </div>
+
+        <nav class="navbar navbar-expand-md">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <div class="dropdown" style="margin-left: 10px; margin-right: 10px; margin-bottom: 20px; margin-top: 20px;">
+                    <button class="btn btn-custom btn-secondary dropdown-toggle-filter btn-header-custom left-icon-holder" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-filter"></i>
+                          Filtros
+                        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#"> Filtro1</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Filtro2</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Filtro3</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Filtro4</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown" style="margin-left: 10px; margin-right: 10px; margin-bottom: 20px; margin-top: 20px;">
+                    <button class="btn btn-custom btn-secondary dropdown-toggle btn-header-custom " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ordenar
+                        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#"> Orden1</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Orden2</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Orden3</a></li>
+                        <li><a class="dropdown-item second-menu-item" href="#">Orden4</a></li>
+                    </ul>
+                </div>
+
+                <div class="form-group has-search" style="margin-left: 10px;">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control input-search" placeholder="Buscar" maxlength="21">
+                </div>
+
+            </div>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" style="margin-left: -8px;">
+                <ul class="navbar-nav ms-auto" style="padding: 20px;">
+                    <li class="nav-item">
+                        <div class="input-group">
+                            <a class="btn btn-white2 ml-2" href="create_campaign.html" role="button">Nueva campaña</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="w3-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">FECHA DE INICIO</th>
+                        <th scope="col">CHOLLO</th>
+                        <th scope="col">CATEGORÍA</th>
+                        <th scope="col">ESTADO</th>
+                        <th scope="col">ENVIADO</th>
+                        <th scope="col">ÚLTIMA ACTIVIDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>18/04/2121</td>
+                        <td>oferta1</td>
+                        <td>informática</td>
+                        <td>enviado</td>
+                        <td>17/04/2121</td>
+                        <td>aceptado</td>
+                    </tr>
+                    <tr>
+                        <td>18/04/2121</td>
+                        <td>oferta2</td>
+                        <td>informática</td>
+                        <td>enviado</td>
+                        <td>17/04/2121</td>
+                        <td>aceptado</td>
+                    </tr>
+                    <tr>
+                        <td>18/04/2121</td>
+                        <td>oferta3</td>
+                        <td>informática</td>
+                        <td>enviado</td>
+                        <td>17/04/2121</td>
+                        <td>rechazado</td>
+                    </tr>
+                    <tr>
+                        <td>18/04/2121</td>
+                        <td>oferta4</td>
+                        <td>informática</td>
+                        <td>enviado</td>
+                        <td>17/04/2121</td>
+                        <td>aceptado</td>
+                    </tr>
+                    <tr>
+                        <td>18/04/2121</td>
+                        <td>oferta5</td>
+                        <td>informática</td>
+                        <td>enviado</td>
+                        <td>17/04/2121</td>
+                        <td>rechazado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /container -->
+
+        <footer class="">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Empresa</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li><a href="#">Nosotros</a></li>
+                                    <li><a href="#">Conoce al equipo</a></li>
+                                    <li><a href="#">Empleos</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Comunidad</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Como funciona Michollo</a></li>
+                                    <li><a href="#">Normas comunitarias</a></li>
+                                    <li><a href="#">Sugerencias</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Legal</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Política de privacidad</a></li>
+                                    <li><a href="#">Política sobre Cookies</a></li>
+                                    <li><a href="#">Reglas de Publicación</a></li>
+                                    <li><a href="#">Aviso Legal y Condiciones</a></li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Síguenos</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                            <h4 style="padding-top: 20px;">Descarga nuestra app</h4>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-custom-footer"><i class="fa fa-apple" aria-hidden="true"></i>Apple Store</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-custom-footer"><i class="fa fa-play" aria-hidden="true"></i>Google Play</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 copy">
+                            <p class="text-center">&copy; Copyright 2018 - Company Name. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+    <script src="js/jquery-3.5.1.slim.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
