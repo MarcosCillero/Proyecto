@@ -9,6 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Bootstrap CSS -->
+    <script src="js/bootstrap.min.js "></script>
     <link rel="stylesheet" href="css/bootstrap.min_create_campaign.css" />
     <title>Login</title>
     <!--Font Awesome-->
@@ -16,6 +17,11 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aleo&display=swap" rel="stylesheet">
+    <!--Boostrap Datapicker-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
 </head>
 
 <body>
@@ -105,32 +111,144 @@
         <div class="w3-container">
             <div class="container px-5 py-6 mx-auto">
                 <div class="card">
-                    <div class="row justify-content-center my-auto">
-                        <div class="col-md-8 col-10 my-5">
-                            <div class="row justify-content-center px-3 mb-3">
-                                <!--<img id="logo" src="">-->
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <form>
+                                <div class=" form-group ">
+                                    <div class="form-group row remember-field">
+                                        <h4>Crea tu campaña:</h4>
 
-                            </div>
+                                    </div>
 
-                            <h3 class="mb-5 text-center heading">Somos la compañía X</h3>
-                            <h4 class="msg-info">Accede a tu cuenta:</h4>
-                            <div class="form-group">
-                                <label class="form-control-label text-muted">Email:</label>
-                                <input type="text" id="email" name="email" placeholder="ejemplo@ex.com" class="form-control"><br>
-                            </div>
+                                    <div class="form-group row remember-field">
+                                        <div class="col ">
+                                            <label for="discount">Código de Descuento:</label>
 
-                            <div class="form-group">
-                                <label class="form-control-label text-muted">Contraseña</label>
-                                <input type="password" id="psw" name="psw" placeholder="*************" class="form-control">
-                            </div>
+                                        </div>
 
-                            <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Entrar</button> </div>
-                            <div class="row justify-content-center float-end my-2"> <a href="remember_password.html" class="float-right"><small class="text-muted">¿Has olvidado tu contraseña?</small></a> </div>
+                                        <div class="col ">
+                                            <label for="url">URL de la Campaña:</label>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row remember-field remember-field-pass">
+                                        <div class="col">
+                                            <input type="text " name=" " id="discount" class="form-control " placeholder="Código de Descuento" aria-describedby="helpId ">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text " name=" " id="url" class="form-control " placeholder="http://" aria-describedby="helpId ">
+                                            <p style="color:grey;"><small>Link to campaign catalogue or home page</small></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field">
+                                        <div class="col ">
+                                            <label for="discount-type">Tipo de Descuento:</label>
+
+                                        </div>
+
+                                        <div class="col ">
+                                            <label for="discount-import">Importe de Descuento:</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field remember-field-pass">
+                                        <div class="col">
+                                            <select name="discount-type" class="c-form-profession form-control" id="discount-type">
+                                                <option value="Seleccionar">Seleccionar</option>
+                                                <option value="Web design">Opcion 1</option>
+                                                <option value="SEO">Opcion 2</option>
+                                                <option value="Marketing">Opcion 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text " name=" " id="discount-import" class="form-control " placeholder="70%" aria-describedby="helpId ">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field">
+                                        <div class="col ">
+                                            <label for="date">Fecha de Inicio:</label>
+
+                                        </div>
+
+                                        <div class="col ">
+                                            <label for="date">Fecha fin:</label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field remember-field-pass">
+                                        <div class="col">
+                                            <input class="form-control" id="start-date" name="date" placeholder="12/26/2021" type="text" />
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control" id="end-date" name="date" placeholder="12/26/2021" type="text" />
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field">
+                                        <div class="col ">
+                                            <label for="reserve">Embargado hasta:</label>
+
+                                        </div>
+
+                                        <div class="col ">
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field remember-field-pass">
+                                        <div class="col">
+                                            <input class="form-control" id="reserve-date" name="date" placeholder="12/26/2021" type="text" />
+                                        </div>
+                                        <div class="col">
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field">
+                                        <div class="col ">
+                                            <label for="file-link">Enlace del archivo:</label>
+
+                                        </div>
+
+                                        <div class="col ">
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row remember-field remember-field-pass">
+                                        <div class="col-5">
+                                            <input type="text " name=" " id="file-link" class="form-control " placeholder="http://" aria-describedby="helpId ">
+                                        </div>
+                                        <div class="col-2" style="width: 5%;">
+                                            <p style="text-align: center; padding-top: 10px;">o</p>
+                                        </div>
+                                        <div class="col-5">
+
+                                            <a class="btn btn-white ml-2" href="#" role="button">Adjuntar archivo</a>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row remember-field remember-field-buttom">
+                                        <div class="col text-center">
+                                            <a class="btn btn-white ml-2" href="#" role="button">Enviar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </div>
-                    <div class="bottom text-center mb-5">
-                        <p href="#" class="sm-text mx-auto mb-3">¿Nuevo? Crea una cuenta gratis</p>
-                        <a class="btn btn-white ml-2" href="sign_in.html" role="button">Crear</a>
                     </div>
                 </div>
             </div>
@@ -227,9 +345,54 @@
         }
     </script>
 
-    <script src="js/jquery-3.5.1.slim.min.js "></script>
-    <script src="js/popper.min.js "></script>
-    <script src="js/bootstrap.min.js "></script>
+
+
+
+
+    <script>
+        $(function() {
+            $("#start-date").datepicker({
+                weekStart: 1,
+                startDate: "-",
+                maxViewMode: 0,
+                clearBtn: true,
+                language: "nl",
+                orientation: "top auto",
+                calendarWeeks: true,
+                todayHighlight: true
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $("#end-date").datepicker({
+                weekStart: 1,
+                startDate: "-",
+                maxViewMode: 0,
+                clearBtn: true,
+                language: "nl",
+                orientation: "top auto",
+                calendarWeeks: true,
+                todayHighlight: true
+            });
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $("#reserve-date").datepicker({
+                weekStart: 1,
+                startDate: "-",
+                maxViewMode: 0,
+                clearBtn: true,
+                language: "nl",
+                orientation: "top auto",
+                calendarWeeks: true,
+                todayHighlight: true
+            });
+        });
+    </script>
 
 
 
