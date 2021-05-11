@@ -11036,3 +11036,9 @@ select {
 .campign-element {
     margin-top: 20px;
 }
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

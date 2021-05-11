@@ -10993,3 +10993,9 @@ a {
 .second-menu-item {
     margin-top: 10px;
 }
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
