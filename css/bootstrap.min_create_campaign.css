@@ -10830,7 +10830,8 @@ body {
 }
 
 input,
-textarea {
+textarea,
+select {
     background-color: #F3E5F5;
     border-radius: 50px !important;
     padding: 12px 15px 12px 15px !important;
@@ -10844,7 +10845,8 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -11024,4 +11026,13 @@ a {
 
 .navbar-custom {
     z-index: 2;
+}
+
+input,
+select {
+    margin-top: 5px;
+}
+
+.campign-element {
+    margin-top: 20px;
 }
