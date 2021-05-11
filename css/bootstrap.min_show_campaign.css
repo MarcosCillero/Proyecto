@@ -3884,7 +3884,6 @@ fieldset:disabled .btn {
     background-color: transparent;
     border-radius: 20px;
     border: 0;
-    position: inherit;
 }
 
 .dropdown-item:focus,
@@ -11044,13 +11043,14 @@ a {
 }
 
 .navbar-custom {
-    z-index: 2;
+    z-index: 10;
 }
 
 .input-search {
     background-color: #fff;
     border: none !important;
     height: 35px;
+    width: 300px;
     text-align: center;
 }
 
@@ -11156,5 +11156,21 @@ thead th span {
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
+    }
+}
+
+.navbar-brand-second {
+    display: none;
+}
+
+@media screen and (width: 768px) {
+    .nav-button {
+        display: flow-root !important;
+    }
+    .navbar-brand {
+        display: none !important;
+    }
+    .navbar-brand-second {
+        display: block !important;
     }
 }
