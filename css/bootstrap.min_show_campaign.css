@@ -11049,8 +11049,8 @@ a {
 .input-search {
     background-color: #fff;
     border: none !important;
-    height: 35px;
-    width: 300px;
+    height: 33px;
+    width: 160px;
     text-align: center;
 }
 
@@ -11063,7 +11063,7 @@ a {
     z-index: 2;
     display: block;
     width: 2.375rem;
-    height: 2.37rem;
+    height: 2.50rem;
     line-height: 2.375rem;
     text-align: center;
     pointer-events: none;
@@ -11172,5 +11172,11 @@ thead th span {
     }
     .navbar-brand-second {
         display: block !important;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+    .input-search {
+        width: 350px;
     }
 }
