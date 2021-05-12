@@ -10867,6 +10867,7 @@ button:focus {
     border-radius: 20px;
     border: none;
     margin: 0 auto;
+    margin-top: 9.5%;
     width: 65%;
 }
 
