@@ -11052,6 +11052,7 @@ a {
     height: 33px;
     width: 160px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .has-search .form-control {
